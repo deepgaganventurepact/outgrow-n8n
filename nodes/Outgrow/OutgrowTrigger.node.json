@@ -1,0 +1,14 @@
+{
+	"node": "n8n-nodes-base.outgrow",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Miscellaneous"],
+	"resources": {
+  		"credentialDocumentation": [
+			{"url":"https://support.outgrow.co/docs/api-key"}
+		],
+  		"primaryDocumentation": [
+			{"url":"https://support.outgrow.co/docs/getting-started-1"}
+		]
+	}
+}
