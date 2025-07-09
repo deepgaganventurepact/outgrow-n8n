@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-outgrow",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "n8n node to interact with Outgrow's content marketing and lead generation platform.",
   "keywords": [
     "n8n-community-node-package"
