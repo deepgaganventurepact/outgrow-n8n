@@ -25,7 +25,7 @@ export class OutgrowTrigger implements INodeType {
 		outputs: [NodeConnectionType.Main],
 		credentials: [
 			{
-				name: 'OutgrowApi',
+				name: 'outgrowApi',
 				required: true,
 			},
 		],
@@ -47,7 +47,7 @@ export class OutgrowTrigger implements INodeType {
 	methods = {
 		loadOptions: {
 			async getCalculators(this: ILoadOptionsFunctions): Promise<INodePropertyOptions[]> {
-				const credentials = await this.getCredentials('OutgrowApi');
+				const credentials = await this.getCredentials('outgrowApi');
 				if (!credentials?.apiKey) {
 					throw new NodeApiError(this.getNode(), {
 						message: 'API Key is missing or invalid',
@@ -75,7 +75,7 @@ export class OutgrowTrigger implements INodeType {
 	};
 
 	async poll(this: IPollFunctions): Promise<INodeExecutionData[][] | null> {
-		const credentials = await this.getCredentials('OutgrowApi');
+		const credentials = await this.getCredentials('outgrowApi');
 		if (!credentials?.apiKey) {
 			throw new NodeApiError(this.getNode(), {
 				message: 'API Key is missing or invalid',
