@@ -27,7 +27,7 @@ export class OutgrowApi implements ICredentialType {
 
   test: ICredentialTestRequest = {
     request: {
-	  url: '={{"http://api-calc.outgrow.co/api/v1/get_cal/" + $credentials.apiKey}}',
+	  url: '={{"https://api-calc.outgrow.co/api/v1/get_cal/" + $credentials.apiKey}}',
       method: 'GET',
       headers: {
         Accept: 'application/json',
