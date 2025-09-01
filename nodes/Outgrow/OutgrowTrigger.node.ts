@@ -37,6 +37,7 @@ export class OutgrowTrigger implements INodeType {
 				required: true,
 				typeOptions: {
 					loadOptionsMethod: 'getCalculators',
+					// loadOptionsDependsOn: ['credentials.outgrowApi.apiKey'],
 				},
 				default: '',
 				description: 'Select which Outgrow calculator to monitor. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
